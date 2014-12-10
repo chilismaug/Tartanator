@@ -13,8 +13,8 @@
       $.mobile.selectmenu.prototype.options.nativeMenu = false;
     });
   </script>
-  <script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
-  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+
 </head> 
 <body> 
 
