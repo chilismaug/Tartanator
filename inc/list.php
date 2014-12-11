@@ -47,6 +47,10 @@ foreach ($tartans as $base) {
 }
 ksort($list_items); // Sort array of tartan HTML <li> elements by key (display name)
 
+//debuggy hack
+
+print $list_items;
+
 // Track the current first letter of the tartans we're listing
 $current_letter = '';
 foreach($list_items as $display_name => $li) {
