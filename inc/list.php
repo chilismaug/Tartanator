@@ -37,7 +37,7 @@ foreach ($tartans as $base) {
       $base,
       $display_name);
   }
-  $list_items[$display_name] .= sprintf('<li id="tartan-%s"><a href="%s%s.html">"%s"<h3>%s</h3></a></li>',
+  $list_items[$display_name] .= sprintf('<li id="tartan-%s"><a href="%s%s.html">"%s"<h3>"%s"</h3></a></li>',
     $base,
     PUBLIC_TARTAN_DIR,
     $base,
