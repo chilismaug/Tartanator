@@ -23,16 +23,21 @@ if (is_dir($dir)) {
   }
 }
 foreach ($tartans as $base) {
+
+
   $tartan                     = new LyzaTartan();
   $tartan->fromXML($base);
   $base                       = $tartan->getBaseName();
   $display_name               = ucwords($tartan->name);
+      //debuggy temp hack 
+     printf('\$base and \$display_name vars: '%s , %s',  $base, $display_name);
   $list_items[$display_name]  = '';
   // Munge together the HTML output
   $tartan_image = '';
   if (file_exists(TARTAN_IMAGE_DIR . $base . '-200.png')) {
     // Generate image tag if image exists
     $tartan_image = sprintf('<img src="%simages/%s-200.png" alt="%s" />',
+   //   $tartan_image = sprintf('<img src="%simages/%s.png" alt="%s" />',
       PUBLIC_TARTAN_DIR,
       $base,
       $display_name);
@@ -46,6 +51,8 @@ foreach ($tartans as $base) {
   unset($tartan);
 }
 ksort($list_items); // Sort array of tartan HTML <li> elements by key (display name)
+
+
 
 // Track the current first letter of the tartans we're listing
 $current_letter = '';
