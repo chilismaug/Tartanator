@@ -3,8 +3,8 @@
  * Generate <li> elements for tartans dynamically, based on the HTML
  * files present in the tartans HTML directory.
  */
-require_once(dirname(__FILE__) . '/../config.php');
-require_once(dirname(__FILE__) . '/tartan.inc');
+require_once(dirname(__FILE__) . '../config.php');
+require_once(dirname(__FILE__) . 'tartan.inc');
 
 $dir        = TARTAN_HTML_DIR;
 $tartans    = array();
@@ -37,7 +37,7 @@ foreach ($tartans as $base) {
       $base,
       $display_name);
   }
-  $list_items[$display_name] .= sprintf('<li id="tartan-%s"><a href="%s%s.html">'%s'<h3>'%s'</h3></a></li>',
+  $list_items[$display_name] .= sprintf('<li id="tartan-%s"><a href="%s%s.html">%s<h3>%s</h3></a></li>',
     $base,
     PUBLIC_TARTAN_DIR,
     $base,
