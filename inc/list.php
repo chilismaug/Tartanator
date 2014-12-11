@@ -32,7 +32,8 @@ foreach ($tartans as $base) {
   $tartan_image = '';
   if (file_exists(TARTAN_IMAGE_DIR . $base . '-200.png')) {
     // Generate image tag if image exists
-    $tartan_image = sprintf('<img src="%simages/%s-200.png" alt="%s" />',
+   // $tartan_image = sprintf('<img src="%simages/%s-200.png" alt="%s" />',
+    $tartan_image = sprintf('<img src="%simages/%s.png" alt="%s" />',
       PUBLIC_TARTAN_DIR,
       $base,
       $display_name);
@@ -47,8 +48,7 @@ foreach ($tartans as $base) {
 }
 ksort($list_items); // Sort array of tartan HTML <li> elements by key (display name)
 
-//debuggy hack
-
+//debuggy hack 
 print implode($list_items);
 
 // Track the current first letter of the tartans we're listing
