@@ -28,7 +28,7 @@
 
 	<div data-role="content">	
     <ul data-role="listview" data-filter="true">
-
+ 		<?php include('inc/list.php');?>
     </ul>
 	</div><!-- /content -->
 	<div data-role="footer" data-position="fixed">
