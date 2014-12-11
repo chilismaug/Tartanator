@@ -24,7 +24,7 @@ if (is_dir($dir)) {
 }
 foreach ($tartans as $base) {
   //debuggy temp hack 
-print implode($base);
+print "\$base var: " + implode($base);
 
   $tartan                     = new LyzaTartan();
   $tartan->fromXML($base);
