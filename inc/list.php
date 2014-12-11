@@ -23,13 +23,14 @@ if (is_dir($dir)) {
   }
 }
 foreach ($tartans as $base) {
-  //debuggy temp hack 
-print "\$base var: " + implode($base);
+
 
   $tartan                     = new LyzaTartan();
   $tartan->fromXML($base);
   $base                       = $tartan->getBaseName();
   $display_name               = ucwords($tartan->name);
+      //debuggy temp hack 
+     printf('\$base and \$display_name vars: '%s , %s',  $base, $display_name);
   $list_items[$display_name]  = '';
   // Munge together the HTML output
   $tartan_image = '';
