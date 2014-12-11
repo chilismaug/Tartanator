@@ -49,7 +49,7 @@ ksort($list_items); // Sort array of tartan HTML <li> elements by key (display n
 
 //debuggy hack
 
-print $list_items;
+print implode($list_items);
 
 // Track the current first letter of the tartans we're listing
 $current_letter = '';
