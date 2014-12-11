@@ -31,6 +31,7 @@
  		<?php include('inc/list.php');?>
     </ul>
 	</div><!-- /content -->
+	
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar"> 
 			<ul> 
