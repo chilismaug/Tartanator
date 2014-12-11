@@ -51,11 +51,11 @@ ksort($list_items); // Sort array of tartan HTML <li> elements by key (display n
 $current_letter = '';
 foreach($list_items as $display_name => $li) {
   $first_letter = substr($display_name, 0, 1);
-  if ($first_letter != $current_letter) {icon
+  if ($first_letter != $current_letter) {
     // If the first letter of this tartan is different than
     // the first letter of the preceding tartan, create a list
     // divider with the new letter
-    printf("<li role="list-divider">%s</li>", $first_letter);
+    printf('<li role="list-divider">%s</li>', $first_letter);
     $current_letter = $first_letter;
   }
   print $li; // Print each <li> in the array of tartans
