@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tartan name="vstud" stripe="2" scale="1">
+  <description>iisexpress http://localhost:49229/build.php</description>
+  <stitches>
+    <stitch color="#333333" count="10"/>
+    <stitch color="#660000" count="4"/>
+    <stitch color="#3c516c" count="8"/>
+  </stitches>
+</tartan>
