@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tartan name="hjooey" stripe="2" scale="1">
+  <description>manialite</description>
+  <stitches>
+    <stitch color="#cc0000" count="2"/>
+    <stitch color="#cccccc" count="2"/>
+    <stitch color="#ffffff" count="8"/>
+    <stitch color="#FFD700" count="2"/>
+  </stitches>
+</tartan>

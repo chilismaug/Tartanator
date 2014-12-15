@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tartan name="waitingforguests" stripe="2" scale="1">
+  <description>hours before time</description>
+  <stitches>
+    <stitch color="#333333" count="2"/>
+    <stitch color="#B0E0E6" count="14"/>
+    <stitch color="#999999" count="2"/>
+    <stitch color="#cc9966" count="4"/>
+  </stitches>
+</tartan>
